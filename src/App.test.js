@@ -23,7 +23,8 @@ describe('Renders <App /> components', () => {
     expect(actual.length).toEqual(1)
   })
   it('should render increment button', () => {
-
+    const actual = app.find('button')
+    expect(actual.length).toEqual(1)
   })
   it('should render decrement button')
 })
