@@ -25,5 +25,9 @@ describe('Renders <App /> components', () => {
   it('should render increment and decrement button', () => {
     const actual = app.find('button')
     expect(actual.length).toEqual(2)
+    const incButton = app.find('button').first()
+    const decButton = app.find('button').last()
+    expect(incButton.text().trim()).toEqual('+')
+    expect(decButton.text().trim()).toEqual('-')
   })
 })
