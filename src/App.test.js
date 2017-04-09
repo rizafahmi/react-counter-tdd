@@ -30,4 +30,8 @@ describe('Renders <App /> components', () => {
     expect(incButton.text().trim()).toEqual('+')
     expect(decButton.text().trim()).toEqual('-')
   })
+  it('should have counter 0 as initial state', () => {
+    const actual = app.state().counter
+    expect(actual).toEqual(0)
+  })
 })
