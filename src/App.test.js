@@ -10,7 +10,11 @@ it('renders without crashing', () => {
 })
 
 describe('Renders <App /> components', () => {
-  it('should render title component')
+  it('should render title component', () => {
+    const app = shallow(<App />)
+    const actual = app.find('h1').text()
+    expect(actual).toEqual('React Counter')
+  })
   it('should render counter component')
   it('should render increment button')
   it('should render decrement button')
