@@ -34,4 +34,11 @@ describe('Renders <App /> components', () => {
     const actual = app.state().counter
     expect(actual).toEqual(0)
   })
+  it('should add counter if increment button click', () => {
+    const incButton = app.find('button').first()
+    incButton.simulate('click')
+    const actual = app.state().counter
+    expect(actual).toEqual(1)
+  })
+  it('should substract counter if decrement button click')
 })
