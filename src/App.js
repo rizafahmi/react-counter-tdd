@@ -8,6 +8,7 @@ class App extends Component {
       <div>
         <h1>React Counter</h1>
         <Counter />
+        <button> + </button>
       </div>
     )
   }
