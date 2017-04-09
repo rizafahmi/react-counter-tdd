@@ -22,9 +22,8 @@ describe('Renders <App /> components', () => {
     const actual = app.find('Counter')
     expect(actual.length).toEqual(1)
   })
-  it('should render increment button', () => {
+  it('should render increment and decrement button', () => {
     const actual = app.find('button')
-    expect(actual.length).toEqual(1)
+    expect(actual.length).toEqual(2)
   })
-  it('should render decrement button')
 })
