@@ -15,7 +15,11 @@ describe('Renders <App /> components', () => {
     const actual = app.find('h1').text()
     expect(actual).toEqual('React Counter')
   })
-  it('should render counter component')
+  it('should render counter component', () => {
+    const app = shallow(<App />)
+    const actual = app.find('Counter')
+    expect(actual.length).toEqual(1)
+  })
   it('should render increment button')
   it('should render decrement button')
 })
